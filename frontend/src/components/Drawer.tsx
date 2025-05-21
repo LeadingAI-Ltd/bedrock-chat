@@ -214,7 +214,7 @@ const Drawer: React.FC<Props> = (props) => {
   const { newChat, conversationId } = useChat();
   const { botId } = useParams();
 
-  const { isAllowCreatingBot, isAllowApiSettings, isAdmin } = useLoginUser();
+  const { isAllowCreatingBot } = useLoginUser();
 
   useEffect(() => {
     setPrevConversations(conversations);
