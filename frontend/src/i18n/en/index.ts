@@ -317,7 +317,7 @@ How would you categorize this email?`,
       },
       my: {
         label: {
-          pageTitle: 'My Bots',
+          pageTitle: 'My Assistants',
         },
       },
       item: {
