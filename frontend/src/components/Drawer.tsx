@@ -41,6 +41,7 @@ import Button from './Button';
 import Skeleton from './Skeleton';
 import { isPinnedBot } from '../utils/BotUtils';
 import IconPinnedBot from './IconPinnedBot';
+import useLoginUser from '../hooks/useLoginUser';
 
 type Props = BaseProps & {
   isAdmin: boolean;
@@ -213,6 +214,8 @@ const Drawer: React.FC<Props> = (props) => {
   const { newChat, conversationId } = useChat();
   const { botId } = useParams();
 
+  const { isAllowCreatingBot } = useLoginUser();
+
   useEffect(() => {
     setPrevConversations(conversations);
   }, [conversations]);
@@ -295,20 +298,13 @@ const Drawer: React.FC<Props> = (props) => {
                 onClick={onClickNewChat}
                 labelComponent={t('button.newChat')}
               />
-              <DrawerItem
+              {isAllowCreatingBot && <DrawerItem
                 isActive={false}
                 icon={<PiListBullets />}
                 to="/bot/my"
                 labelComponent={getPageLabel('/bot/my')}
                 onClick={closeSmallDrawer}
-              />
-              <DrawerItem
-                isActive={false}
-                icon={<PiCompass />}
-                to="/bot/discover"
-                labelComponent={getPageLabel('/bot/discover')}
-                onClick={closeSmallDrawer}
-              />
+              />}
 
               <ExpandableDrawerGroup
                 label={t('app.starredBots')}

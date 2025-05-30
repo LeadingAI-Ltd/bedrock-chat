@@ -23,6 +23,10 @@ import ConversationHistoryPage from './pages/ConversationHistoryPage.tsx';
 const rootChildren = [
   {
     path: '/',
+    element: <BotDiscoverPage />,
+  },
+  {
+    path: '/chat',
     element: <ChatPage />,
   },
   {
