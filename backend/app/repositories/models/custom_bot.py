@@ -480,19 +480,23 @@ class BotModel(BaseModel):
     def is_accessible_by_user(self, user: User) -> bool:
         """Check if the bot is accessible by the user. This is used for reading the bot."""
 
+        # Admin and bot owner always have access
         if user.is_admin() or self.owner_user_id == user.id:
             return True
 
+        # Private bots are not accessible
         if self.shared_scope == "private":
             return False
 
+        # Public bots are accessible to all
         if self.shared_scope == "all":
             return True
 
+        # Check direct user access
         if user.id in self.allowed_cognito_users:
             return True
 
-        # Check if the user is in the allowed Cognito groups
+        # Check if the user is in any of the allowed Cognito groups
         user_groups = get_user_cognito_groups(user)
         return any(group in self.allowed_cognito_groups for group in user_groups)
 

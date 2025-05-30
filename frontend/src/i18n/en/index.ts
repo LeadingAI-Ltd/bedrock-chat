@@ -6,10 +6,10 @@ const translation = {
       },
     },
     app: {
-      name: 'Bedrock Chat',
-      inputMessage: 'How can I Help You?',
-      starredBots: 'Starred Bots',
-      recentlyUsedBots: 'Recently Used Bots',
+      name: 'AI Assistant Chat',
+      inputMessage: 'Type a new question...',
+      starredBots: 'Starred Assistants',
+      recentlyUsedBots: 'Recently Used Assistants',
       conversationHistory: 'Recent Chats',
       chatWaitingSymbol: '▍',
       adminConsoles: 'Admin Panel',
@@ -199,8 +199,8 @@ const translation = {
     },
     bot: {
       label: {
-        myBots: 'My Bots',
-        recentlyUsedBots: 'Recently Used Bots',
+        myBots: 'My Assistants',
+        recentlyUsedBots: 'Recently Used Assistants',
         knowledge: 'Knowledge',
         url: 'URL',
         s3url: 'S3 Data Source',
@@ -209,12 +209,12 @@ const translation = {
         loadingBot: 'Loading...',
         normalChat: 'Chat',
         notAvailableBot: '[NOT Available]',
-        notAvailableBotInputMessage: 'This bot is NOT available.',
+        notAvailableBotInputMessage: 'This Assistant is NOT available.',
         noDescription: 'No Description',
-        notAvailable: 'This bot is NOT available.',
-        noBots: 'No Bots.',
-        noBotsRecentlyUsed: 'No Recently Used Bots.',
-        noStarredBots: 'No Starred Bots.',
+        notAvailable: 'This Assistant is NOT available.',
+        noBots: 'No Assistants.',
+        noBotsRecentlyUsed: 'No Recently Used Assistants.',
+        noStarredBots: 'No Starred Assistants.',
         retrievingKnowledge: '[Retrieving Knowledge...]',
         dndFileUpload:
           'You can upload files by drag and drop.\nSupported files: {{fileExtensions}}',
@@ -276,7 +276,7 @@ const translation = {
           },
           incomplete: {
             title: 'NOT Ready',
-            body: 'This bot has not completed the knowledge synchronization, so the knowledge before the update is used.',
+            body: 'This Assistant has not completed the knowledge synchronization, so the knowledge before the update is used.',
           },
         },
       },
@@ -317,7 +317,7 @@ How would you categorize this email?`,
       },
       my: {
         label: {
-          pageTitle: 'My Bots',
+          pageTitle: 'My Assistants',
         },
       },
       item: {
@@ -547,11 +547,11 @@ How would you categorize this email?`,
       },
     },
     discover: {
-      pageTitle: 'Discover Bot',
+      pageTitle: 'Choose Your AI Assistant',
       description:
-        'View and search bots that are public or permitted for your access.',
+        'Select an assistant to start a new conversation. Each assistant is trained on specific knowledge to help you with particular tasks.',
       search: {
-        placeholder: 'Search Bots',
+        placeholder: 'Search for assistants by name, topic, or capability...',
         searching: 'Searching...',
         results: 'Found {{count}} results for "{{query}}"',
         noResults: 'No results found for "{{query}}"',
@@ -559,9 +559,9 @@ How would you categorize this email?`,
         backToHome: 'Back to Home',
       },
       essential: {
-        label: 'Essential',
+        label: 'Essential Assistants',
         description:
-          'These bots are officially selected by administrators. Use them actively to improve your work efficiency as part of standard operations.',
+          'These are our most popular and recommended assistants for your needs.',
         noEssentialBotsMessage: {
           title: 'No Essential Bots',
           content: `Essential section is hidden for non-admin users since there are no Essential bots.<br/>

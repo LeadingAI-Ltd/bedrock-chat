@@ -49,8 +49,7 @@ const AppContent: React.FC<Props> = (props) => {
 
   const onClickNewChat = useCallback(() => {
     navigate('/');
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [navigate]);
 
   const [isOpenDeleteChat, setIsOpenDeleteChat] = useState(false);
   const [deleteTarget, setDeleteTarget] = useState<
