@@ -305,13 +305,6 @@ const Drawer: React.FC<Props> = (props) => {
                 labelComponent={getPageLabel('/bot/my')}
                 onClick={closeSmallDrawer}
               />}
-              <DrawerItem
-                isActive={false}
-                icon={<PiCompass />}
-                to="/bot/discover"
-                labelComponent={getPageLabel('/bot/discover')}
-                onClick={closeSmallDrawer}
-              />
 
               <ExpandableDrawerGroup
                 label={t('app.starredBots')}
