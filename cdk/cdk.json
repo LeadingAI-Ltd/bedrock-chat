@@ -60,14 +60,14 @@
     "identityProviders": [],
     "userPoolDomainPrefix": "",
     "allowedSignUpEmailDomains": [],
-    "autoJoinUserGroups": ["KB-Users"],
-    "selfSignUpEnabled": true,
+    "autoJoinUserGroups": [],
+    "selfSignUpEnabled": false,
     "publishedApiAllowedIpV4AddressRanges": ["0.0.0.0/1", "128.0.0.0/1"],
     "publishedApiAllowedIpV6AddressRanges": [
       "0000:0000:0000:0000:0000:0000:0000:0000/1",
       "8000:0000:0000:0000:0000:0000:0000:0000/1"
     ],
-    "enableRagReplicas": true,
+    "enableRagReplicas": false,
     "enableBedrockCrossRegionInference": true,
     "enableLambdaSnapStart": false,
     "enableBotStore": true,
