@@ -547,11 +547,11 @@ How would you categorize this email?`,
       },
     },
     discover: {
-      pageTitle: 'Discover Assistant',
+      pageTitle: 'Choose Your AI Assistant',
       description:
-        'View and search Assistants that are public or permitted for your access.',
+        'Select an assistant to start a new conversation. Each assistant is trained on specific knowledge to help you with particular tasks.',
       search: {
-        placeholder: 'Search Bots',
+        placeholder: 'Search for assistants by name, topic, or capability...',
         searching: 'Searching...',
         results: 'Found {{count}} results for "{{query}}"',
         noResults: 'No results found for "{{query}}"',
@@ -559,9 +559,9 @@ How would you categorize this email?`,
         backToHome: 'Back to Home',
       },
       essential: {
-        label: 'Essential',
+        label: 'Essential Assistants',
         description:
-          'These bots are officially selected by administrators. Use them actively to improve your work efficiency as part of standard operations.',
+          'These are our most popular and recommended assistants for your needs.',
         noEssentialBotsMessage: {
           title: 'No Essential Bots',
           content: `Essential section is hidden for non-admin users since there are no Essential bots.<br/>

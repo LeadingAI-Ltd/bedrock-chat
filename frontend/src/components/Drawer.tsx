@@ -16,7 +16,7 @@ import {
   PiChat,
   PiChatCenteredDotsDuotone,
   PiCheck,
-  PiCompass,
+  // PiCompass,
   PiListBullets,
   PiNotePencil,
   PiPencilLine,
@@ -305,13 +305,14 @@ const Drawer: React.FC<Props> = (props) => {
                 labelComponent={getPageLabel('/bot/my')}
                 onClick={closeSmallDrawer}
               />}
-              <DrawerItem
+
+              {/* <DrawerItem
                 isActive={false}
                 icon={<PiCompass />}
                 to="/bot/discover"
                 labelComponent={getPageLabel('/bot/discover')}
                 onClick={closeSmallDrawer}
-              />
+              /> */}
 
               <ExpandableDrawerGroup
                 label={t('app.starredBots')}
